@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'TareaLogin';
+  visible: boolean = true;
+  titulo: string = 'Ingrese sus Credenciales';
+  homeTitulo: string = 'Bienvenido - Ingresar a Login';
+
+  login(){
+    this.visible = !this.visible
+  }
+
+  cambiarVisibilidad(){
+    this.visible = !this.visible;
+  }
 }
